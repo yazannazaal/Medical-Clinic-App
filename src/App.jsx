@@ -1,7 +1,11 @@
+import Navbar from "./components/header/Navbar";
+import Home from "./pages/home/Home";
+
 function App() {
   return (
     <>
-      <h2 className="text-red-500">Medical clinic app</h2>
+      <Navbar />
+      <Home />
     </>
   );
 }
