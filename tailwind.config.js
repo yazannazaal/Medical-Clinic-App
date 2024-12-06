@@ -2,7 +2,12 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        ttuPattern: "url('/src/assets/doctors/adds3.jpg')",
+      },
+
+    },
   },
   plugins: [],
 };
