@@ -3,7 +3,7 @@ import NumbersSection from "../../components/homeComps/NumbersSection";
 import ProfessionalCareSection from "../../components/homeComps/ProfessionalCareSection";
 import ServicesSection from "../../components/homeComps/ServicesSection";
 import TestimonialsSection from "../../components/homeComps/TestimonialsSection";
-
+import FooterSection from "../../components/homeComps/FooterSection";
 const Home = () => {
   return (
     <div className="h-screen">
@@ -16,6 +16,8 @@ const Home = () => {
       <ProfessionalCareSection />
 
       <TestimonialsSection />
+      <FooterSection />
+ 
     </div>
   );
 };
