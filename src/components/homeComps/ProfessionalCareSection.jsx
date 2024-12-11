@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import doctor1 from "../../assets/homeAssets/doctor1.png";
 import doctor2 from "../../assets/homeAssets/doctor2.png";
 import doctor3 from "../../assets/homeAssets/doctor3.png";
@@ -90,9 +91,9 @@ const ProfessionalCareSection = () => {
             Meet our entire team of professionals.
           </p>
           <div className="flex items-center gap-1 bg-yellow-500 text-blue-800 py-2 px-6 rounded-full text-lg font-semibold hover:bg-yellow-400">
-            <button to="/doctors" className=" ">
+            <Link to="/doctors" className=" ">
               View Doctors
-            </button>
+            </Link>
             <FaArrowRight />
           </div>
         </div>
