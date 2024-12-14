@@ -16,7 +16,8 @@ export default function Navbar() {
     { id: 2, name: "Health library", route: "/" },
     { id: 3, name: "Doctors", route: "/doctors" },
     { id: 4, name: "Blog", route: "/" },
-    { id: 5, name: "About", route: "/" },
+    { id: 5, name: "About", route: "/aboutt" },
+    { id: 5, name: "Contact", route: "/contact" },
   ];
 
   return (
