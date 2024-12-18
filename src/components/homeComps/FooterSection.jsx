@@ -58,7 +58,7 @@ const FooterSection = () => {
           <li>
             <Link
               className="text-gray-700 transition hover:text-gray-700/75"
-              to="/Aboutt"
+              to="/About"
             >
               About
             </Link>
