@@ -5,6 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         ttuPattern: "url('/src/assets/doctors/adds3.jpg')",
+        doctorAdd: "url('/src/assets/doctors/DoctorwithScope.jpg')"
       },
 
     },
