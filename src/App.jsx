@@ -7,6 +7,8 @@ import Contact from "./pages/contact/Contact";
 import About from "./components/aboutComps/About";
 import Aboutt from "./pages/About/Aboutt";
 import Notfoundpage from "./components/NotFound/Notfoundpage";
+import Register from "./components/auth/Register";
+import Login from "./components/auth/Login";
 function App() {
   return (
     <BrowserRouter>
@@ -19,6 +21,8 @@ function App() {
         <Route path="/aboutfooter" element={<About />} />
         <Route path="/notfound" element={<Notfoundpage />} />
         <Route path="/about" element={<Aboutt />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   );

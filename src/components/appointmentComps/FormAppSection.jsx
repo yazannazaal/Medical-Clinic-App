@@ -1,17 +1,14 @@
 import { HiPhone } from "react-icons/hi";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
-import { DevTool } from "@hookform/devtools";
 
 const FormAppSection = () => {
-  const form = useForm();
   const {
     register,
-    control,
     handleSubmit,
     formState: { errors },
-  } = form;
-
+    setValue,
+  } = useForm();
   const [selectedDepartment, setSelectedDepartment] = useState("");
 
   const departments = [
@@ -26,15 +23,17 @@ const FormAppSection = () => {
   ];
 
   const onDepartmentChange = (event) => {
-    setSelectedDepartment(event.target.value);
-  };
-
-  const onSubmit = (data) => {
-    console.log("Form submitted", data);
+    const selectedDept = event.target.value;
+    setSelectedDepartment(selectedDept);
+    setValue("doctor", "");
   };
 
   const filteredDoctors =
     departments.find((dept) => dept.name === selectedDepartment)?.doctors || [];
+
+  const onSubmit = (data) => {
+    console.log("Form Data:", data);
+  };
 
   return (
     <section className="flex flex-col md:flex-row justify-between items-start px-10 py-6">
@@ -144,7 +143,6 @@ const FormAppSection = () => {
             Make Appointment
           </button>
         </form>
-        <DevTool control={control} />
       </div>
     </section>
   );
