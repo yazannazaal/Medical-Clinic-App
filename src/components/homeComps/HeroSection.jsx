@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import video from "../../assets/homeAssets/a.mp4";
 import { FaArrowRight } from "react-icons/fa6";
 
@@ -25,9 +26,12 @@ const HeroSection = () => {
             <FaArrowRight className="text-white text-xl md:text-2xl mt-8 transform rotate-0" />
           </div>
           <div>
-            <button className="mt-8 border border-gray-200 px-12 py-3 text-white bg-inherit hover:bg-white hover:text-slate-900 rounded-3xl text-lg transition-all duration-300 ease-in-out">
+            <Link
+              to="/register"
+              className="block mt-10 border border-gray-200 px-12 py-3 text-white bg-inherit hover:bg-white hover:text-slate-900 rounded-3xl text-lg transition-all duration-300 ease-in-out"
+            >
               Sign up
-            </button>
+            </Link>
           </div>
         </div>
       </div>
