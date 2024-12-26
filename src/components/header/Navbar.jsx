@@ -21,10 +21,10 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="flex justify-between items-center bg-gradient-to-r from-white to-gray-100 h-[85px] px-5 shadow-md">
+    <nav className="flex justify-between items-center bg-gradient-to-r  from-white to-gray-100 h-[85px] px-5 shadow-md">
       <Link
         to="/"
-        className="cursor-pointer flex items-center w-full md:w-1/12 mt-4 md:mt-0"
+        className="cursor-pointer flex items-center w-full md:w-3/12 mt-4 md:mt-0"
       >
         <p className="text-lg md:text-2xl font-semibold text-gray-800">
           Medical Clinic
