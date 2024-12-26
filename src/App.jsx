@@ -11,8 +11,12 @@ import Contact from "./pages/contact/Contact";
 import About from "./components/aboutComps/About";
 import Aboutt from "./pages/About/Aboutt";
 import Notfoundpage from "./components/NotFound/Notfoundpage";
-import Register from "./components/auth/Register";
-import Login from "./components/auth/Login";
+
+import ForgotPassword from "./pages/ForgotPasswoed/ForgotPassword";
+import VerifyCode from "./components/ForgotPasswordComps/VerifyCode";
+import PasswodReset from "./components/ForgotPasswordComps/PasswodReset";
+import SetNewPassword from "./components/ForgotPasswordComps/SetNewPassword";
+import Loding from "./pages/lodingPage/Loding";
 function App() {
   return (
     <BrowserRouter>
@@ -24,14 +28,18 @@ function App() {
         <Route path="/patientProfile" element={<PatientProfile />} />
         <Route path="/DoctorProfile" element={<DoctorProfile />} />
         <Route path="/FAQs" element={<FAQ />} />
-        <Route path="/payment" element={<PaymentPage />} /
+        <Route path="/payment" element={<PaymentPage />} />
         <Route path="/appointment" element={<Appointment />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/aboutfooter" element={<About />} />
-        <Route path="/notfound" element={<Notfoundpage />} />
+        <Route path="/*" element={<Notfoundpage />} />
         <Route path="/about" element={<Aboutt />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
+        
+        <Route path="/forgotpassword" element={<ForgotPassword />} />
+        <Route path="/verifyCode" element={<VerifyCode />} />
+        <Route path="/passwodreset" element={<PasswodReset />} />
+        <Route path="/setNewPassword" element={<SetNewPassword />} />
+        <Route path="/loding" element={<Loding />} />
       </Routes>
     </BrowserRouter>
   );
